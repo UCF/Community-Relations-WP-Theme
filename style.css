@@ -1,5 +1,5 @@
 /*
-Theme Name: UCF- DCR
+Theme Name: UCF Community Relations
 
 
 Author: Eleet Tech
@@ -9,6 +9,12 @@ License URI: license.txt
 
 */
 
+/* IE7 fixes */
+.dateBar, .logoHeader, .siteWrapper { zoom:1; }
+.dateBar { height:26px; overflow:hidden; position:relative; zoom:1; margin:0;  }
+.dateBar span { zoom:1; display:block; position:absolute; top:0; right:0; }
+.logoHeader { width:982px; height:90px; overflow:none; position:relative; zoom:1;  }
+#pageContent { zoom:1;  }
 
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
