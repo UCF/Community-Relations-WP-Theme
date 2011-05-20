@@ -20,16 +20,7 @@
     </div>
     <div class="footerNavWrapper">
       <div class="footerNav">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About the Office</a></li>
-          <li><a href="/departments">Departments</a></li>
-          <li><a href="/news">News</a></li>
-          <li><a href="/events">Events</a></li>
-          <li><a href="http://events.ucf.edu/?upcoming=upcoming" target="_blank">Calendar</a></li>
-          <li><a href="/resources">Resources</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
+        <?php wp_nav_menu('main-menu');?>
       </div>
       <p class="quickLinks"><a href="http://www.facebook.com/UCF"> <img src="<?php bloginfo( 'template_directory' ); ?>/images/icon-fb.gif" alt="Find Us on Facebook" width="16" height="16" align="texttop" /> Find Us on Facebook</a> <a href="http://itunes.ucf.edu"> <img src="<?php bloginfo( 'template_directory' ); ?>/images/icon-itunesU.gif" alt="Listen on iTunes U" width="16" height="16" align="texttop" /> Listen on iTunes U</a> <a href=http://www.twitter.com/UCF"> <img src="<?php bloginfo( 'template_directory' ); ?>/images/icon-twitter.gif" alt="Follow Us on Twitter" width="16" height="16" align="texttop" /> Follow Us on Twitter</a> <a href="http://www.youtube.com/UCF"> <img src="<?php bloginfo( 'template_directory' ); ?>/images/icon-youtube.gif" alt="Watch on YouTube EDU" width="16" height="16" align="texttop" /> Watch on YouTube EDU</a></p>
       <p align="center">Copyright &copy; 2011 University of Central Florida All rights reserved. </p>
