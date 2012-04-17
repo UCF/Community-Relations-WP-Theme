@@ -54,43 +54,6 @@ if ( is_page('Home') ) {
       </div>
       
       
-   <div id="newsCtas" class="featuredBg">
-        <h2>News</h2>    
-        <?php 
-
-// this is where the Lead Story module begins   
-
-   query_posts('category_name=news','showposts=2'); 
-  global $more;
-// set $more to 0 in order to only get the first part of the post
-$more = 0; ?>
-
-  <?php while (have_posts()) : the_post(); ?>
-  
-  
-   
-      <?php $image_id = get_post_thumbnail_id();  
-    $image_url = wp_get_attachment_image_src($image_id,'large');  
-    $image_url = $image_url[0];  ?>
-    
-     <div class="newsCta"> <div style="float:left"> <?php the_post_thumbnail( array(100,100) ); ?></div>
-          <div class="ctaContent">
-            <p class="newsCtaTitle"> <?php the_title(); ?></p>
-             <?php the_content(); ?>
-          </div><div class="clear"></div>
-        </div>
-    
-      <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
-      <?php //edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
-   
-    <!-- .entry-content -->
-    <?php endwhile; ?>
-     
-        <div class="clear"></div>
-        
-        
-        
-      </div>
     </div>
     <img style="display:block;" src="<?php bloginfo( 'template_directory' ); ?>/images/bg-content-footer.png" width="734" height="114" /></div>
   <div class="clear"></div>
