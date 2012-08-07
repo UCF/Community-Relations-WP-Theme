@@ -8,13 +8,14 @@
  */
 
 get_header(); ?>
-
-		<div id="container">
-			<div id="content" role="main">
-
-				<h1 class="page-title"><?php
-					printf( __( 'Category Archives: %s', 'twentyten' ), '<span>' . single_cat_title( '', false ) . '</span>' );
-				?></h1>
+<?php get_sidebar(); ?>
+  <div id="contentWrapper">
+  <div id="utilBar"><a href="#" class="printPage"><img src="<?php bloginfo( 'template_directory' ); ?>/images/icon-printer.gif" width="16" height="16" alt="Print Page" /></a><a href="<?php bloginfo('rss2_url'); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/images/icon-rss.gif" width="16" height="16" alt="Add Rss Feed" /></a></div>
+  <img style="display:block;" src="<?php bloginfo( 'template_directory' ); ?>/images/bg-content-top.png"  />
+  <div id="pageContent">
+      <div id="imgHeader"><?php the_post_thumbnail();?></div>
+      <div class="contentCopy">
+	
 				<?php
 					$category_description = category_description();
 					if ( ! empty( $category_description ) )
@@ -27,8 +28,13 @@ get_header(); ?>
 				get_template_part( 'loop', 'category' );
 				?>
 
-			</div><!-- #content -->
-		</div><!-- #container -->
+	
+      </div>
+     
+    </div>
+    <img style="display:block;" src="http://ucfdcr.eleet-tech.com/wp-content/themes/UCF-DCR/images/bg-content-footer.png" width="734" height="114" /></div>
+  <div class="clear"></div>
+</div>
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

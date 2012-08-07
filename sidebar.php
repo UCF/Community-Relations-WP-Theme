@@ -17,7 +17,7 @@ $thePostParentID = $wp_query->post->post_parent;
  ?>
     <div id="nav">
       <ul>
-        <li><a href="/<?php bloginfo ( 'url' ); ?>">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/about-us">About the Office</a><?php 
   if( $thePostID == 7 || $thePostParentID == 7  ){ ?>
 <ul id="nav_sub">
@@ -43,8 +43,8 @@ if ($children) { ?>
 </ul>
 <?php } ?></li>
         <li><a href="/news">News</a></li>
-        <li><a href="/events">Events</a></li>
-        <li><a href="http://events.ucf.edu/?upcoming=upcoming" target="_blank">Calendar</a></li>
+        <li><a href="/events">Photo Gallery</a></li>
+        <li><a href="http://events.ucf.edu/" target="_blank">Calendar</a></li>
         <li><a href="/resources">Resources</a><?php 
   if( $thePostID == 43 || $thePostParentID == 43  ){ ?>
 <ul id="nav_sub">

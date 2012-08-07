@@ -19,9 +19,9 @@
 
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<?php if ( is_front_page() ) { ?>
-						<h2 class="entry-title"><?php the_title(); ?></h2>
+						<h2 class="entry-title">a<?php the_title(); ?></h2>
 					<?php } else { ?>
-						<h1 class="entry-title"><?php the_title(); ?></h1>
+						<h1 class="entry-title">b<?php the_title(); ?></h1>
 					<?php } ?>
 
 					<div class="entry-content">

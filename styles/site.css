@@ -154,7 +154,8 @@ h2
 
 #pageContent ul li
 	{
-		list-style-image:url(../images/arrow.gif);
+		/*list-style-image:url(../images/arrow.gif);*/
+		list-style-position: inside;
 		color:#d1a536;
 		padding:0 0 6px 0;
 	}
@@ -234,7 +235,7 @@ h2
 .footerNav ul li a
 	{
 		
-		padding:0 15px
+		padding:0 13px
 	}
 	
 .footerNav ul li a:hover {

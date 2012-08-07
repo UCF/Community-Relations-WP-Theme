@@ -13,11 +13,17 @@
  * @since Twenty Ten 1.0
  */
 
-get_header(); ?>
+ get_header(); 
+ get_sidebar(); ?>
 
-		<div id="container">
-			<div id="content" role="main">
 
+
+  <div id="contentWrapper">
+  <div id="utilBar"><a href="#" class="printPage"><img src="<?php bloginfo( 'template_directory' ); ?>/images/icon-printer.gif" width="16" height="16" alt="Print Page" /></a><a href="<?php bloginfo('rss2_url'); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/images/icon-rss.gif" width="16" height="16" alt="Add Rss Feed" /></a></div>
+  <img style="display:block;" src="<?php bloginfo( 'template_directory' ); ?>/images/bg-content-top.png"  />
+  <div id="pageContent">
+      <div id="imgHeader"><?php //the_post_thumbnail();?></div>
+      <div class="contentCopy">
 			<?php
 			/* Run the loop to output the posts.
 			 * If you want to overload this in a child theme then include a file
@@ -25,8 +31,10 @@ get_header(); ?>
 			 */
 			 get_template_part( 'loop', 'index' );
 			?>
-			</div><!-- #content -->
-		</div><!-- #container -->
-
-<?php get_sidebar(); ?>
+      </div>
+     
+    </div>
+    <img style="display:block;" src="<?php bloginfo( 'template_directory' ); ?>/images/bg-content-footer.png" width="734" height="114" /></div>
+  <div class="clear"></div>
+</div>
 <?php get_footer(); ?>

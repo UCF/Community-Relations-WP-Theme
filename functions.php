@@ -508,4 +508,4 @@ function twentyten_posted_in() {
 endif;
 
 
-require_once('include/cimy_header_image_rotator.php');
+//require_once('include/cimy_header_image_rotator.php');
